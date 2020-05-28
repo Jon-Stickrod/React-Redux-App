@@ -1,0 +1,51 @@
+@mixin flexCol {
+    display: flex;
+    margin: auto 0%;
+    flex-direction: column;
+    align-items: center;
+    margin-right:15% ;
+    margin-left:15% ;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+
+    img{
+        width: 70%;
+        height: auto;
+    }
+}
+body{
+    background-color: #9dab86;
+}
+.App{
+    
+
+    .characterContainer{
+        
+
+        .characterCard{
+            background-color: #a35638;
+            @include flexCol;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .cardSection{
+        display: flex;
+        margin: auto 0%;
+        flex-wrap: wrap;
+        
+        height: auto;
+        .characterCard{
+            width: 40%;
+            height: auto 0%;
+            margin-right:5% !important ;
+            margin-left:5% !important ;
+
+        }
+    }
+    .characterContainer{
+        flex-wrap: wrap;
+    }
+}
